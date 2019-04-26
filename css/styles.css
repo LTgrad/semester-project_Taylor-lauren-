@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul {
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  padding: 20px;
+  text-align: right;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  z-index: 99
+}
+
+nav a {
+  text-decoration: none;
+  padding: 30px;
+  color: #4e00ba;
+}
+
+
+h1, h2, nav, p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.homepage img{
+  position: fixed;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.WA-headshot,
+.LA-headshot {
+  height: 360px;
+
+}
+
+.LA-headshot {
+  margin-top: 170px;
+  margin-left: 385px;
+}
+
+.WA-headshot {
+  margin-top: 170px;
+  margin-left: 50px;
+}
+
+.about img{
+  position: absolute;
+  top: 700px;
+  max-width: 100%;
+  z-index: 95;
+}
+
+.logo {
+  position: relative;
+  z-index: 90;
+  float: right;
+  width: 700px
+}
