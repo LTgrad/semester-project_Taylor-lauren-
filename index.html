@@ -4,6 +4,8 @@
  <head>
    <title>Home</title>
    <meta charset = "UTF-8" />
+   <!--favicon-->
+
    <!--link to CSS style sheet-->
    <link rel="stylesheet" type="text/css" href="css/styles.css">
    <!--Google Fonts-->
@@ -13,59 +15,42 @@
    <header>
      <nav>
        <ul>
-         <li><a href="#">about</a></li>
-         <li><a href="#">music</a></li>
-         <li><a href="#">events</a></li>
-         <li><a href="#">contact</a></li>
-     </ul>
-    </nav>
-   </header>
-   <img src="images/WALA.png" alt="WALA logo" class="logo" />
-   <div class="homepage">
-    <img src="images/homepage-background.png" alt="WALA Homepage"/>
-    <h1>music by WALA</h1>
-   </div>
-   <div class="music">
-    <h2>music</h2>
-      <p>Track 1...............play</p>
-      <p>Track 2...............play</p>
-      <p>Track 3...............play</p>
-      <p>Track 4...............play</p>
-      <p>Track 5...............play</p>
-      <p>Track 6...............play</p>
-      <p>Track 7...............play</p>
-   </div>
-   <div class="about">
-    <img src="images/about-background.png" alt="WALA About"/>
-        <img class="WA-headshot" src="images/WA-headshot.png" alt="WA headshot" title="WA-headshot" />
-        <img class="LA-headshot" src="images/LA-headshot.png" alt="LA headshot" title="LA-headshot" />
-      </div>
-      <h2>about</h2>
-        <p>1.1.19</p>
-        <p>2.1.19</p>
-        <p>3.1.19</p>
-        <p>4.1.19</p>
-        <p>5.1.19</p>
-        <p>6.1.19</p>
-        <p>7.1.19</p>
-        <p>8.1.19</p>
-        <p>9.1.19</p>
-   </div>
-   <div class="events">
-    <h1>events</h1>
-     <p>
-       This is a paragraph.
-       Note that the text is automatically wrapped.
-     </p>
-   </div>
-   <div class="contact">
-    <h1>contact</h1>
-     <p>
-       This is a paragraph.
-       Note that the text is automatically wrapped.
-     </p>
-   </div>
+         <li><a href="#home">home</a></li>
+         <li><a href="#about">about</a></li>
+         <li><a href="#music">music</a></li>
+         <li><a href="#events">events</a></li>
+         <li><a href="#contact">contact</a></li>
+       </ul>
+     </nav>
+    </header>
+  <main>
+    <section class="home" id="home">
+      <img src="images/WALA-logo.png" alt="WALA logo" class="logo" />
+    </section>
+    <div class="container">
+      <section class="music" id="music">
+        <h1>music</h1>
+        <p>Lorem ipsum dolor amet hella locavore mixtape tumeric sartorial. Everyday carry pok pok helvetica, mumblecore tbh 3 wolf moon keytar forage yr cray. Brooklyn deep v distillery lumbersexual knausgaard. Street art enamel pin squid mustache meh succulents locavore edison bulb, chillwave bushwick 90's man bun.</p>
+      </section>
 
+      <section class="about" id="about">
+        <div class="about-text">
+          <h1>about</h1>
+          <p>Lorem ipsum dolor amet hella locavore mixtape tumeric sartorial. Everyday carry pok pok helvetica, mumblecore tbh 3 wolf moon keytar forage yr cray. Brooklyn deep v distillery lumbersexual knausgaard. Street art enamel pin squid mustache meh succulents locavore edison bulb, chillwave bushwick 90's man bun.</p>
+        </div>
+        <div class="wala-members">
+          <div class="wala-headshots">
+            <p>Wesley Anderson</p>
+            <img src="images/WA-headshot.png" alt="Wesley Anderson">
+          </div>
+          <div class="wala-headshots">
+            <p>Lauren Anderson</p>
+            <img src="images/LA-headshot.png" alt="Lauren Anderson">
+          </div>
+        </div>
+      </section>
+    </div>
+ </main>
 </body>
 
 </html>
