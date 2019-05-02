@@ -4,7 +4,6 @@
   border: 0;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -28,10 +27,12 @@ header {
   left: 0;
   right: 0;
   padding: 10px 0;
+  text-align: right;
 }
 
 header nav ul li {
   display: inline;
+  font-family: 'Work Sans', sans-serif;
 }
 
 header nav a {
@@ -40,6 +41,16 @@ header nav a {
   display: inline;
   font-size: 24px;
   margin: 0 20px;
+
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  color: purple;
+  font-size: 32px;
+  margin: -32px 75px;
+  position: fixed;
+  z-index: 99;
 }
 
 /*=================================
@@ -49,3 +60,132 @@ header nav a {
 *
 *
 *=================================*/
+.hero-image-section {
+  background-image: url('../images/homepage-background.png');
+  background-attachment: fixed;
+  padding: 200px 0 600px;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 500px;
+  float: right;
+  margin: -179px 0px;
+}
+/*=================================
+*
+*
+            container
+*
+*
+*=================================*/
+
+/*=================================
+*
+*
+            music
+*
+*
+*=================================*/
+.music {
+  background-image: url('../images/music-background.png');
+  text-align: left;
+  padding: 200px 0 300px;
+  background-size: cover;
+}
+
+/*=================================
+*
+*
+            about
+*
+*
+*=================================*/
+.about {
+  background-image: url('../images/about-background2.png');
+  text-align: left;
+  padding: 76px 0 138px;
+  background-size: cover;
+  color: white;
+}
+
+.about h2 {
+  text-align: right;
+}
+.about-text {
+  float: right;
+  width: 400px;
+  height: 100px;
+  margin-right: 50px;
+}
+.wala-headshots img {
+  width: 250px;
+
+}
+
+.wala-headshots {
+  display: inline-block;
+}
+
+.wala-members {
+  text-align: left;
+  margin: 65px 100px
+}
+
+/*=================================
+*
+*
+            section break
+*
+*
+*=================================*/
+
+.sectionbreak {
+  background-image: url(../images/section-break.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 500px 0;
+}
+
+/*=================================
+*
+*
+            events
+*
+*
+*=================================*/
+.events {
+  background-image: url('../images/events-background.png');
+  text-align: left;
+  padding: 200px 0 300px;
+  background-size: cover;
+}
+
+/*=================================
+*
+*
+            section break
+*
+*
+*=================================*/
+
+.sectionbreak2 {
+  background-image: url(../images/section-break2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 500px 0px;
+}
+
+/*=================================
+*
+*
+            contact
+*
+*
+*=================================*/
+.contact {
+  background-image: url('../images/contact-background.png');
+  text-align: left;
+  padding: 300px 0 300px;
+  background-size: cover;
+}
