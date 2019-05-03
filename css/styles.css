@@ -173,7 +173,7 @@ h1 {
 .events {
   background-image: url('../images/events-background.png');
   text-align: left;
-  padding: 50px 0 640px;
+  padding: 80px 0 660px;
   background-size: cover;
 }
 
@@ -201,7 +201,7 @@ h1 {
   background-image: url(../images/section-break2.jpg);
   background-attachment: fixed;
   background-size: cover;
-  padding: 500px 0px;
+  padding: 300px 0px;
 }
 
 /*=================================
@@ -214,6 +214,6 @@ h1 {
 .contact {
   background-image: url('../images/contact-background.png');
   text-align: left;
-  padding: 300px 0 300px;
+  padding: 300px 0 310px;
   background-size: cover;
 }
