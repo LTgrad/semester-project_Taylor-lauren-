@@ -58,6 +58,16 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+p::selection {
+ color: white;
+ background-color: purple;
+}
+
+h2::selection {
+ color: white;
+ background-color: purple;
+}
+
 /*=================================
 *
 *
