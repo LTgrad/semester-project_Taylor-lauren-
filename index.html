@@ -49,6 +49,7 @@ $(document).ready(function(){
          <li><a href="#about">about</a></li>
          <li><a href="#events">events</a></li>
          <li><a href="#contact">contact</a></li>
+         <li><a href="#gallery">gallery</a></li>
        </ul>
       <h1>music by WALA</h1>
      </nav>
@@ -150,7 +151,15 @@ $(document).ready(function(){
           </form>
         </div>
       </section>
-      <section class="gallery">
+      <section class="video-break">
+        <div class="overlay"></div>
+        <video class="record-player" width="500px" autoplay loop muted>
+          <source src="record-player-needle_bk1mb7zwr__WL.m4v" type="video/m4v">
+          <source src="html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm">
+            Your browser does not support HTML5 video. :(
+        </video>
+      </section>
+      <section class="gallery" id="gallery">
         <div class="gallery-images">
           <h2>Gallery</h2>
           <a href="images/photo-gallery-1.png" data-lightbox="image-1" data-title="WA's first event"><img src="images/photo-gallery-1.png" alt="Photo Gallery 1" title="Photo Gallery 1"></a>
@@ -164,20 +173,13 @@ $(document).ready(function(){
           <a href="images/photo-gallery-5.png" data-lightbox="image-1" data-title="WALA's first gig"><img src="images/photo-gallery-5.png" alt="Photo Gallery 5" title="Photo Gallery 5"></a>
         </div>
         </section>
-        <section class="video-break">
-          <div class="overlay"></div>
-          <video class="record-player" width="500px" autoplay loop muted>
-            <source src="record-player-needle_bk1mb7zwr__WL.m4v" type="video/m4v">
-            <source src="html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm">
-              Your browser does not support HTML5 video. :(
-          </video>
-        </section>
+
     </main>
     <footer>
       <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank"></a>
-        <a href="https://www.twitter.com" target="_blank"></a>
-        <a href="https://www.instagram.com" target="_blank"></a>
+        <a href="https://www.facebook.com" target="_blank"> <img src="images/facebook.png" alt="facebook logo" title="facebook logo" height="30px"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/purple-twitter-icon.png" alt="twitter logo" title="twitter logo" height="32px"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="instagram logo" title="instagram logo" height="30px"></a>
       </div>
     </footer>
     <script src="lightbox/src/js/lightbox.js"></script>

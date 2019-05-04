@@ -257,7 +257,7 @@ h2::selection {
 .contact {
   background-image: url('../images/contact-background.png');
   text-align: left;
-  padding: 150px 0 210px;
+  padding: 75px 0 210px;
   background-size: cover;
 }
 
@@ -290,6 +290,11 @@ h2::selection {
   height: 50px;
   margin-top: 25px;
   padding-left: 100px;
+
+}
+
+.submit input:hover {
+  background-color: orange;
 
 }
 /*=================================
@@ -369,10 +374,33 @@ h2::selection {
 *
 *=================================*/
 
-.footer {
+footer {
   background-color: white;
-  padding: 20px;
-  margin: auto;
-  bottom: auto;
+  text-align: center;
+  padding: 10px;
+  animation-name: footer-bg;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
+footer img {
+  margin: 0 9px;
+}
+
+/*=================================
+*
+*
+            footer Animation
+*
+*
+*=================================*/
+@keyframes footer-bg {
+  from {background-color: white;}
+  to {background-color: orange;}
 }
