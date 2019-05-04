@@ -34,7 +34,9 @@ $(document).ready(function(){
 });
 </script>
 <!--link to CSS style sheet-->
+  <link href="lightbox/src/css/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300" rel="stylesheet">
   </head>
@@ -54,7 +56,7 @@ $(document).ready(function(){
    <main>
       <section class="hero-image-section" id="home">
         <div class="container">
-         <img src="images/WALA-logo.png" alt="WALA logo" class="logo" />
+         <img src="images/WALA-logo.png" alt="WALA logo" class="logo" title="WALA logo"/>
         </div>
       </section>
          <section class="music" id="music">
@@ -148,15 +150,28 @@ $(document).ready(function(){
           </form>
         </div>
       </section>
+      <section class="gallery">
+        <div class="gallery-images">
+          <h2>Gallery</h2>
+          <a href="images/photo-gallery-1.png" data-lightbox="image-1" data-title="WA's first event"><img src="images/photo-gallery-1.png" alt="Photo Gallery 1" title="Photo Gallery 1"></a>
 
-      <div class="video-break">
-        <div class="overlay"></div>
-        <video class="record-player" width="500px" autoplay loop muted>
-          <source src="record-player-needle_bk1mb7zwr__WL.m4v" type="video/m4v">
-          <source src="html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm">
-            Your browser does not support HTML5 video. :(
-        </video>
-      </div>
+          <a href="images/photo-gallery-2.png" data-lightbox="image-1" data-title="WA killin' it on guitar"><img src="images/photo-gallery-2.png" alt="Photo Gallery 2" title="Photo Gallery 2"></a>
+
+          <a href="images/photo-gallery-3.png" data-lightbox="image-1" data-title="down-time with WALA"><img src="images/photo-gallery-3.png" alt="Photo Gallery 3" title="Photo Gallery 3"></a>
+
+          <a href="images/photo-gallery-4.png" data-lightbox="image-1" data-title="WALA's first tour"><img src="images/photo-gallery-4.png" alt="Photo Gallery 4" title="Photo Gallery 4"></a>
+
+          <a href="images/photo-gallery-5.png" data-lightbox="image-1" data-title="WALA's first gig"><img src="images/photo-gallery-5.png" alt="Photo Gallery 5" title="Photo Gallery 5"></a>
+        </div>
+        </section>
+        <section class="video-break">
+          <div class="overlay"></div>
+          <video class="record-player" width="500px" autoplay loop muted>
+            <source src="record-player-needle_bk1mb7zwr__WL.m4v" type="video/m4v">
+            <source src="html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm">
+              Your browser does not support HTML5 video. :(
+          </video>
+        </section>
     </main>
     <footer>
       <div class="social-media">
@@ -165,6 +180,7 @@ $(document).ready(function(){
         <a href="https://www.instagram.com" target="_blank"></a>
       </div>
     </footer>
+    <script src="lightbox/src/js/lightbox.js"></script>
   </body>
 
 </html>
