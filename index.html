@@ -152,12 +152,17 @@ $(document).ready(function(){
         </div>
       </section>
       <section class="video-break">
-        <div class="overlay"></div>
-        <video class="record-player" width="500px" autoplay loop muted>
-          <source src="record-player-needle_bk1mb7zwr__WL.m4v" type="video/m4v">
-          <source src="html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm">
-            Your browser does not support HTML5 video. :(
+        <style type="text/css">.easyhtml5video .eh5v_script{display:none}</style>
+        <div class="overlay">
+        </div>
+        <div class="record-player"><video controls autoplay="autoplay" poster="eh5v.files/html5video/record-player-needle_bk1mb7zwr__WL.jpg" style="width:100%" title="record-player-needle_bk1mb7zwr__WL" loop="loop" onended="var v=this;setTimeout(function(){v.play()},300)">
+        <source src="eh5v.files/html5video/record-player-needle_bk1mb7zwr__WL.m4v" type="video/mp4" />
+        <source src="eh5v.files/html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm" />
+        <source src="eh5v.files/html5video/record-player-needle_bk1mb7zwr__WL.ogv" type="video/ogg" />
+        <source src="eh5v.files/html5video/record-player-needle_bk1mb7zwr__WL.mp4" />
         </video>
+      </div>
+        <script src="eh5v.files/html5video/html5ext.js" type="text/javascript"></script>
       </section>
       <section class="gallery" id="gallery">
         <div class="gallery-images">
