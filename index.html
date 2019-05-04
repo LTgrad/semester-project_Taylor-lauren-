@@ -4,6 +4,35 @@
     <title>Home</title>
     <meta charset = "UTF-8" />
 <!--favicon-->
+
+<!--smooth scroll script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <!--link to CSS style sheet-->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 <!--Google Fonts-->
@@ -41,12 +70,12 @@
            </section>
          </div>
        <section class="about" id="about">
-         <div class="about-text">
+         <article class="about-text">
            <h2>about</h2>
            <p>Lorem ipsum dolor amet hella locavore mixtape tumeric sartorial. Everyday carry pok pok helvetica, mumblecore tbh 3 wolf moon keytar forage yr cray. Brooklyn deep v distillery lumbersexual knausgaard. Street art enamel pin squid mustache meh succulents locavore edison bulb, chillwave bushwick 90's man bun.</p>
            <p>Lorem ipsum dolor amet hella locavore mixtape tumeric sartorial. Everyday carry pok pok helvetica, mumblecore tbh 3 wolf moon keytar forage yr cray. Brooklyn deep v distillery lumbersexual knausgaard. Street art enamel pin squid mustache meh succulents locavore edison bulb, chillwave bushwick 90's man bun.</p>
            <p>Lorem ipsum dolor amet hella locavore mixtape tumeric sartorial. Everyday carry pok pok helvetica, mumblecore tbh 3 wolf moon keytar forage yr cray. Brooklyn deep v distillery lumbersexual knausgaard. Street art enamel pin squid mustache meh succulents locavore edison bulb, chillwave bushwick 90's man bun.</p>
-          </div>
+         </article>
           <div class="wala-members">
             <div class="wala-headshots">
               <p>Wesley Anderson</p>
@@ -59,52 +88,52 @@
           </section>
         </div>
       <section class="sectionbreak"></section>
-      <div class="container">
-        <section class="events" id="events">
+        <div class="events" id="events">
           <div class="events-text">
             <h2>events</h2>
-            <p>1.1.19..................
+            <ul>
+              <li>1.1.19..................
               sliders, jax beach...........................................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>2.1.19..................
-              southern grounds, jax beach..................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>3.1.19..................
-              southern grounds, san marco................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>4.1.19..................
-              raindogs, five points....................................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>5.1.19..................
-              southern grounds, jax beach...................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>6.1.19..................
-              blue jay listening room, jax beach........
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>7.1.19..................
-              sliders, jax beach...........................................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>8.1.19..................
-              hemming plaza, downtown.....................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
-            <p>9.1.19..................
-              1904 music hall, downtown......................
-              <a href="https://www.ticketmaster.com/">buy now</a></p>
+              <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>2.1.19..................
+                southern grounds, jax beach..................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>3.1.19..................
+                southern grounds, san marco................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>4.1.19..................
+                raindogs, five points....................................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>5.1.19..................
+                southern grounds, jax beach...................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>6.1.19..................
+                blue jay listening room, jax beach........
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>7.1.19..................
+                sliders, jax beach...........................................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>8.1.19..................
+                hemming plaza, downtown.....................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+              <li>9.1.19..................
+                1904 music hall, downtown....................
+                <a href="https://www.ticketmaster.com/">buy now</a></li>
+            <ul>
           </div>
-        </section>
-      </div>
+        </div>
       <section class="sectionbreak2"></section>
-      <div class="container">
-        <section class="contact" id="contact">
+      <section class="contact" id="contact">
+        <div class="contactus-container">
           <h2>contact</h2>
           <form class="contact-us" id="contact-form" name="contact-form" action="form.php" method="post" onsubmit="return validationform(this)">
             <div class="first-name">
               <label for="first-name" class="label_input_wrap">first name:</label>
-              <input type="text" name="first-name" placeholder="First Name" id="first-name">
+              <input type="text" name="first-name" placeholder="first name" id="first-name">
             </div>
             <div class="last-name">
               <label for="last-name" class="label_input_wrap">last name:</label>
-              <input type="text" name="last-name" placeholder="Last Name" id="last-name">
+              <input type="text" name="last-name" placeholder="last name" id="last-name">
             </div>
             <div class="email">
               <label for="email" class="label_input_wrap">email:</label>
@@ -112,13 +141,21 @@
             </div>
             <div class="message">
               <label for="message" class="label_input_wrap">your message:</label>
-              <input type="text" name="message" placeholder="your message here" id="message">
-            </div>
-            <div class="send">
-              <input type="submit" value="send">
+              <textarea type="text" name="message" placeholder="your message here" id="message"></textarea>
+            <div class="submit">
+              <input type="submit" value="send" align="center">
             </div>
           </form>
-        </section>
+        </div>
+      </section>
+
+      <div class="video-break">
+        <div class="overlay"></div>
+        <video class="record-player" width="500px" autoplay loop muted>
+          <source src="record-player-needle_bk1mb7zwr__WL.m4v" type="video/m4v">
+          <source src="html5video/record-player-needle_bk1mb7zwr__WL.webm" type="video/webm">
+            Your browser does not support HTML5 video. :(
+        </video>
       </div>
     </main>
     <footer>

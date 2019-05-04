@@ -13,9 +13,11 @@ h3,
 h4,
 h5,
 h6,
-p  {
+p,
+label  {
   font-family: 'Work Sans', sans-serif;
   padding: 8px;
+  color: white;
 }
 
 /*=================================
@@ -96,13 +98,6 @@ h2::selection {
   float: right;
   margin: -179px 0px;
 }
-/*=================================
-*
-*
-            container
-*
-*
-*=================================*/
 
 /*=================================
 *
@@ -209,8 +204,24 @@ h2::selection {
   color: white;
 }
 
-.events-text p {
+.events-text ul li {
   text-decoration: underline;
+    font-family: 'Work Sans', sans-serif;
+    padding: 9px;
+}
+
+.events-text a {
+  background-color: white;
+  border-radius: 2px;
+  color: purple;
+  padding: 5px;
+}
+
+.events-text a:hover {
+  background-color: orange;
+  border-radius: 2px;
+  color: white;
+  padding: 5px;
 }
 /*=================================
 *
@@ -237,6 +248,86 @@ h2::selection {
 .contact {
   background-image: url('../images/contact-background.png');
   text-align: left;
-  padding: 300px 0 310px;
+  padding: 150px 0 210px;
   background-size: cover;
+}
+
+.contactus-container {
+  margin: 0 75px;
+}
+
+.conact-us .label_input_wrap {
+  vertical-align: top;
+  display: block;
+  max-width: 500px
+}
+
+.contact-us input,
+.contact-us textarea {
+  background-color: white;
+  padding: 15px 90px 15px 5px;
+  margin: 10px;
+  display: block;
+}
+.contact-us textarea {
+  width: 300px;
+  height: 150px;
+}
+
+.submit input {
+  background-color: #8c52ff;
+  color: white;
+  width: 250px;
+  height: 50px;
+  margin-top: 25px;
+  padding-left: 100px;
+
+}
+/*=================================
+*
+*
+            video finish
+*
+*
+*=================================*/
+
+.video-break {
+  position: relative;
+  background-attachment: scroll;
+  overflow: hidden;
+
+}
+.record-player {
+      min-width: 100%;
+      min-height: 100%;
+      position: relative;
+      z-index: 0;
+}
+
+.video-break .overlay {
+  height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 2;
+   background-color: #f907fc;
+   background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+   opacity: 0.5;
+
+}
+/*=================================
+*
+*
+            footer
+*
+*
+*=================================*/
+
+.footer {
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  bottom: auto;
+
 }
